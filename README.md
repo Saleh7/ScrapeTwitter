@@ -14,6 +14,10 @@ require 'ScrapeTwitter.php';
 
 $Scrape = new ScrapeTwitter();
 
+//Example get get Tweets
+$getTweets = $Scrape->getTweets("iPain7");
+echo $getTweets;
+
 //Example get User ID
 $getUserID = $Scrape->UserID("iPain7");
 echo $getUserID;
@@ -35,5 +39,6 @@ print_r($SearchDefault);
 
 * UserID($User);
 * UserInfo($User);
+* getTweets($User);
 * Hashtags($User);
 * Search($String,$Type);
